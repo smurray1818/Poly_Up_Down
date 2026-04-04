@@ -244,12 +244,11 @@
           <th data-col="win_rate" class="sorted">Win Rate<span class="sort-icon">&#9660;</span></th>
           <th data-col="trades_per_day">Trades/Day<span class="sort-icon">&#9650;</span></th>
           <th data-col="profit">Profit<span class="sort-icon">&#9650;</span></th>
-          <th data-col="views">Views<span class="sort-icon">&#9650;</span></th>
           <th>Link</th>
         </tr>
       </thead>
       <tbody id="tbody">
-        <tr><td colspan="7" id="loading"><span class="spinner"></span>Loading wallets…</td></tr>
+        <tr><td colspan="6" id="loading"><span class="spinner"></span>Loading wallets…</td></tr>
       </tbody>
     </table>
   </div>
@@ -272,7 +271,7 @@
   function renderTable(data) {
     const tbody = document.getElementById('tbody');
     if (!data.length) {
-      tbody.innerHTML = '<tr><td colspan="7" class="empty">No wallets matched the filter criteria yet. Run the agent to populate results.</td></tr>';
+      tbody.innerHTML = '<tr><td colspan="6" class="empty">No wallets matched the filter criteria yet. Run the agent to populate results.</td></tr>';
       return;
     }
 
@@ -294,7 +293,6 @@
           <td class="win-rate">${(w.win_rate * 100).toFixed(1)}%</td>
           <td>${w.trades_per_day.toFixed(1)}</td>
           <td class="profit ${profClass}">${fmtProfit(w.profit)}</td>
-          <td>${w.views.toLocaleString()}</td>
           <td>
             <a class="link-btn" href="${w.polymarket_url}" target="_blank" rel="noopener">
               &#8599; Profile
@@ -366,7 +364,7 @@
       sortData();
     } catch (e) {
       document.getElementById('tbody').innerHTML =
-        '<tr><td colspan="7" class="empty">Could not load results.json — run the agent first.</td></tr>';
+        '<tr><td colspan="6" class="empty">Could not load results.json — run the agent first.</td></tr>';
     }
   }
 

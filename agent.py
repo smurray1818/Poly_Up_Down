@@ -12,7 +12,6 @@ Criteria:
 """
 
 import json
-import os
 import time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -158,20 +157,10 @@ def fetch_trade_stats(address: str) -> dict:
     # Fallback to leaderboard PnL if positions have no data
     # (will be patched in main loop from the leaderboard snapshot)
 
-    # --- profile views ---
-    # The data API exposes a /profile endpoint for some wallets
-    views = 0
-    profile = get(f"{GAMMA_API}/profiles", {"address": address})
-    if isinstance(profile, list) and profile:
-        views = int(profile[0].get("views", 0) or 0)
-    elif isinstance(profile, dict):
-        views = int(profile.get("views", 0) or 0)
-
     return {
         "trades_per_day": round(trades_per_day, 2),
         "win_rate":        round(win_rate, 4) if win_rate is not None else None,
         "profit":          round(profit, 2),
-        "views":           views,
     }
 
 
@@ -181,7 +170,6 @@ def fetch_trade_stats(address: str) -> dict:
 
 WIN_RATE_MIN       = 0.85
 TRADES_PER_DAY_MIN = 10
-VIEWS_MAX          = 1000
 
 # Push an incremental update to GitHub every N wallets processed
 PUSH_EVERY = 50
@@ -190,12 +178,10 @@ PUSH_EVERY = 50
 def passes_filter(stats: dict) -> bool:
     wr  = stats.get("win_rate")
     tpd = stats.get("trades_per_day", 0)
-    v   = stats.get("views", 0)
     return (
         wr is not None
-        and wr   >= WIN_RATE_MIN
-        and tpd  >  TRADES_PER_DAY_MIN
-        and v    <  VIEWS_MAX
+        and wr  >= WIN_RATE_MIN
+        and tpd >  TRADES_PER_DAY_MIN
     )
 
 
@@ -251,7 +237,7 @@ def run():
 
             print(
                 f"wr={stats['win_rate']}  tpd={stats['trades_per_day']}  "
-                f"profit={stats['profit']}  views={stats['views']}"
+                f"profit={stats['profit']}"
             )
 
             if passes_filter(stats):
@@ -261,7 +247,6 @@ def run():
                         "win_rate":       stats["win_rate"],
                         "trades_per_day": stats["trades_per_day"],
                         "profit":         stats["profit"],
-                        "views":          stats["views"],
                         "polymarket_url": f"https://polymarket.com/profile/{address}",
                     }
                 )

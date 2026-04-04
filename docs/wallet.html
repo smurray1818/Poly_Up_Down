@@ -232,10 +232,6 @@
         <div class="stat-label">Total Profit</div>
         <div class="stat-value" id="stat-profit">—</div>
       </div>
-      <div class="stat-card">
-        <div class="stat-label">Profile Views</div>
-        <div class="stat-value" id="stat-views">—</div>
-      </div>
     </div>
 
     <div class="section">
@@ -256,10 +252,6 @@
         <div class="kv-row">
           <span class="label">Total profit / PnL</span>
           <span class="value" id="detail-profit">—</span>
-        </div>
-        <div class="kv-row">
-          <span class="label">Profile views</span>
-          <span class="value" id="detail-views">—</span>
         </div>
         <div class="kv-row">
           <span class="label">Polymarket profile</span>
@@ -311,14 +303,11 @@
     profEl.textContent  = fmtProfit(w.profit);
     profEl.style.color  = w.profit >= 0 ? 'var(--green)' : 'var(--red)';
 
-    document.getElementById('stat-views').textContent = w.views.toLocaleString();
-
     // detail rows
     document.getElementById('detail-address').textContent = w.address;
     document.getElementById('detail-winrate').textContent  = (w.win_rate * 100).toFixed(2) + '%';
     document.getElementById('detail-tpd').textContent      = w.trades_per_day.toFixed(2);
     document.getElementById('detail-profit').textContent   = fmtProfit(w.profit);
-    document.getElementById('detail-views').textContent    = w.views.toLocaleString();
     document.getElementById('detail-link').href            = w.polymarket_url;
 
     document.getElementById('loading-msg').style.display = 'none';
