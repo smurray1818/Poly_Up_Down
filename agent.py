@@ -72,7 +72,7 @@ def fetch_leaderboard_wallets() -> list[dict]:
                 "limit":      LEADERBOARD_LIMIT,
                 "offset":     page * LEADERBOARD_LIMIT,
             }
-            data = get(f"{DATA_API}/leaderboard", params)
+            data = get(f"{DATA_API}/v1/leaderboard", params)
             if not data:
                 break
             for entry in data:
