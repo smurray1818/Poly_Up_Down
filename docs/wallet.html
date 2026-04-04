@@ -221,8 +221,8 @@
 
     <div class="stats-grid">
       <div class="stat-card">
-        <div class="stat-label">Win Rate</div>
-        <div class="stat-value green" id="stat-winrate">—</div>
+        <div class="stat-label">PnL / Trade</div>
+        <div class="stat-value" id="stat-pnl-per-trade">—</div>
       </div>
       <div class="stat-card">
         <div class="stat-label">Trades / Day</div>
@@ -242,8 +242,8 @@
           <span class="value" id="detail-address">—</span>
         </div>
         <div class="kv-row">
-          <span class="label">Win rate</span>
-          <span class="value" id="detail-winrate">—</span>
+          <span class="label">PnL per trade</span>
+          <span class="value" id="detail-pnl-per-trade">—</span>
         </div>
         <div class="kv-row">
           <span class="label">Trades per day (30d avg)</span>
@@ -296,7 +296,10 @@
     document.getElementById('poly-link').href = w.polymarket_url;
 
     // hero stats
-    document.getElementById('stat-winrate').textContent = (w.win_rate * 100).toFixed(1) + '%';
+    const ppt = w.pnl_per_trade;
+    const pptEl = document.getElementById('stat-pnl-per-trade');
+    pptEl.textContent = (ppt >= 0 ? '+' : '') + '$' + ppt.toFixed(2);
+    pptEl.style.color = ppt >= 0 ? 'var(--green)' : 'var(--red)';
     document.getElementById('stat-tpd').textContent     = w.trades_per_day.toFixed(1);
 
     const profEl = document.getElementById('stat-profit');
@@ -305,7 +308,7 @@
 
     // detail rows
     document.getElementById('detail-address').textContent = w.address;
-    document.getElementById('detail-winrate').textContent  = (w.win_rate * 100).toFixed(2) + '%';
+    document.getElementById('detail-pnl-per-trade').textContent = (ppt >= 0 ? '+' : '') + '$' + ppt.toFixed(4);
     document.getElementById('detail-tpd').textContent      = w.trades_per_day.toFixed(2);
     document.getElementById('detail-profit').textContent   = fmtProfit(w.profit);
     document.getElementById('detail-link').href            = w.polymarket_url;

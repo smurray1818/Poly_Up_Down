@@ -6,9 +6,8 @@ Fetches active traders from the Polymarket leaderboard, computes stats
 the criteria below, and writes results to docs/results.json.
 
 Criteria:
-  - win_rate      >= 0.85
   - trades_per_day >= 1  (7-day average)
-  - profit        > 0
+  - profit         > 0
 """
 
 import json
@@ -96,10 +95,10 @@ def fetch_leaderboard_wallets() -> list[dict]:
 def fetch_trade_stats(address: str) -> dict:
     """
     Returns:
-      win_rate       float  (resolved trades only; NaN → skip wallet)
-      trades_per_day float
+      trades_per_day float  (avg over DAYS_LOOKBACK window)
+      trade_count    int    (total trades fetched)
       profit         float  (total cash PnL from closed positions)
-      views          int    (profile views; 0 when unavailable)
+      pnl_per_trade  float  (profit / trade_count; None if no trades)
     """
     # --- trades ---
     trades = get(
@@ -109,38 +108,13 @@ def fetch_trade_stats(address: str) -> dict:
     if not isinstance(trades, list) or len(trades) == 0:
         return {}
 
+    trade_count = len(trades)
+
     # trades/day over the look-back window
     now_ts = datetime.now(timezone.utc).timestamp()
     cutoff  = now_ts - DAYS_LOOKBACK * 86400
     recent  = [t for t in trades if (t.get("timestamp") or 0) >= cutoff]
     trades_per_day = len(recent) / DAYS_LOOKBACK
-
-    # win rate: consider SELL trades as outcomes
-    # A sell is a "win" when the cashPnL > 0 (sold for more than cost basis)
-    # We approximate: trade is a win if side=="SELL" and price > 0.5 (sold YES tokens above fair)
-    # More precisely: use the cashPnL field when present, else price comparison.
-    wins   = 0
-    losses = 0
-    for t in trades:
-        cash_pnl = t.get("cashPnL") or t.get("cashPnl")
-        side     = (t.get("side") or "").upper()
-        if side != "SELL":
-            continue  # only resolved-position sells count
-        if cash_pnl is not None:
-            if float(cash_pnl) > 0:
-                wins   += 1
-            else:
-                losses += 1
-        else:
-            # fallback: selling YES tokens at price > 0.5 implies profit
-            price = float(t.get("price") or 0)
-            if price > 0.5:
-                wins   += 1
-            elif price > 0:
-                losses += 1
-
-    total_resolved = wins + losses
-    win_rate = wins / total_resolved if total_resolved > 0 else None
 
     # --- profit via positions ---
     positions = get(
@@ -150,17 +124,19 @@ def fetch_trade_stats(address: str) -> dict:
     profit = 0.0
     if isinstance(positions, list):
         for p in positions:
-            # cashPnL is realised+unrealised PnL in USD
             cash_pnl = p.get("cashPnL") or p.get("cashPnl") or 0
             profit  += float(cash_pnl)
 
-    # Fallback to leaderboard PnL if positions have no data
-    # (will be patched in main loop from the leaderboard snapshot)
+    # Fallback to leaderboard PnL if positions return nothing
+    # (patched in the main loop from the leaderboard snapshot)
+
+    pnl_per_trade = round(profit / trade_count, 4) if trade_count > 0 else None
 
     return {
         "trades_per_day": round(trades_per_day, 2),
-        "win_rate":        round(win_rate, 4) if win_rate is not None else None,
-        "profit":          round(profit, 2),
+        "trade_count":    trade_count,
+        "profit":         round(profit, 2),
+        "pnl_per_trade":  pnl_per_trade,
     }
 
 
@@ -168,7 +144,6 @@ def fetch_trade_stats(address: str) -> dict:
 # Step 3 – filter & write output
 # ---------------------------------------------------------------------------
 
-WIN_RATE_MIN       = 0.85
 TRADES_PER_DAY_MIN = 1
 
 # Push an incremental update to GitHub every N wallets processed
@@ -176,20 +151,17 @@ PUSH_EVERY = 50
 
 
 def passes_filter(stats: dict) -> bool:
-    wr     = stats.get("win_rate")
     tpd    = stats.get("trades_per_day", 0)
     profit = stats.get("profit", 0)
     return (
-        wr is not None
-        and wr     >= WIN_RATE_MIN
-        and tpd    >= TRADES_PER_DAY_MIN
+        tpd    >= TRADES_PER_DAY_MIN
         and profit >  0
     )
 
 
 def write_results(results: list, out_path: Path) -> None:
     """Write sorted results to disk."""
-    sorted_results = sorted(results, key=lambda x: (-x["win_rate"], -x["profit"]))
+    sorted_results = sorted(results, key=lambda x: (-(x["pnl_per_trade"] or 0), -x["profit"]))
     with open(out_path, "w") as f:
         json.dump(sorted_results, f, indent=2)
 
@@ -238,7 +210,7 @@ def run():
                 stats["profit"] = round(float(w["pnl_raw"]), 2)
 
             print(
-                f"wr={stats['win_rate']}  tpd={stats['trades_per_day']}  "
+                f"pnl_per_trade={stats['pnl_per_trade']}  tpd={stats['trades_per_day']}  "
                 f"profit={stats['profit']}"
             )
 
@@ -246,7 +218,7 @@ def run():
                 results.append(
                     {
                         "address":        address,
-                        "win_rate":       stats["win_rate"],
+                        "pnl_per_trade":  stats["pnl_per_trade"],
                         "trades_per_day": stats["trades_per_day"],
                         "profit":         stats["profit"],
                         "polymarket_url": f"https://polymarket.com/profile/{address}",

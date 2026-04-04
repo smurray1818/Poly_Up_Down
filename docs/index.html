@@ -227,7 +227,7 @@
 
 <header>
   <h1>Polymarket Wallet Tracker</h1>
-  <p>Wallets with &ge;85% win rate, &ge;1 trade/day (7-day avg), and positive profit.</p>
+  <p>Wallets with positive profit, &ge;1 trade/day (7-day avg), sorted by PnL per trade.</p>
   <div id="meta">
     <span id="count-badge"></span>
     <span id="updated"></span>
@@ -241,7 +241,7 @@
         <tr>
           <th class="rank-col" data-col="rank">Rank<span class="sort-icon">&#9650;</span></th>
           <th data-col="address">Wallet</th>
-          <th data-col="win_rate" class="sorted">Win Rate<span class="sort-icon">&#9660;</span></th>
+          <th data-col="pnl_per_trade" class="sorted">PnL/Trade<span class="sort-icon">&#9660;</span></th>
           <th data-col="trades_per_day">Trades/Day<span class="sort-icon">&#9650;</span></th>
           <th data-col="profit">Profit<span class="sort-icon">&#9650;</span></th>
           <th>Link</th>
@@ -290,7 +290,7 @@
               <button class="copy-btn" data-addr="${w.address}" onclick="copyAddr(this)">Copy</button>
             </div>
           </td>
-          <td class="win-rate">${(w.win_rate * 100).toFixed(1)}%</td>
+          <td class="win-rate">${w.pnl_per_trade >= 0 ? '+' : ''}$${w.pnl_per_trade.toFixed(2)}</td>
           <td>${w.trades_per_day.toFixed(1)}</td>
           <td class="profit ${profClass}">${fmtProfit(w.profit)}</td>
           <td>
