@@ -6,9 +6,9 @@ Fetches active traders from the Polymarket leaderboard, computes stats
 the criteria below, and writes results to docs/results.json.
 
 Criteria:
-  - win_rate  >= 0.85
-  - trades_per_day > 10
-  - profile_views < 1000
+  - win_rate      >= 0.85
+  - trades_per_day >= 1  (7-day average)
+  - profit        > 0
 """
 
 import json
@@ -30,7 +30,7 @@ LEADERBOARD_LIMIT = 50
 
 # Look-back window for per-wallet trade history
 TRADE_HISTORY_LIMIT = 500          # max trades fetched per wallet
-DAYS_LOOKBACK       = 30           # window for trades/day calculation
+DAYS_LOOKBACK       = 7            # window for trades/day calculation
 
 # Respect rate limits – sleep between per-wallet requests
 REQUEST_DELAY = 0.3  # seconds
@@ -169,19 +169,21 @@ def fetch_trade_stats(address: str) -> dict:
 # ---------------------------------------------------------------------------
 
 WIN_RATE_MIN       = 0.85
-TRADES_PER_DAY_MIN = 10
+TRADES_PER_DAY_MIN = 1
 
 # Push an incremental update to GitHub every N wallets processed
 PUSH_EVERY = 50
 
 
 def passes_filter(stats: dict) -> bool:
-    wr  = stats.get("win_rate")
-    tpd = stats.get("trades_per_day", 0)
+    wr     = stats.get("win_rate")
+    tpd    = stats.get("trades_per_day", 0)
+    profit = stats.get("profit", 0)
     return (
         wr is not None
-        and wr  >= WIN_RATE_MIN
-        and tpd >  TRADES_PER_DAY_MIN
+        and wr     >= WIN_RATE_MIN
+        and tpd    >= TRADES_PER_DAY_MIN
+        and profit >  0
     )
 
 
