@@ -3,7 +3,7 @@
 [![Win Rate](https://img.shields.io/endpoint?url=https://smurray1818.github.io/Poly_Scrape/badge_winrate.json&cacheSeconds=900)](https://smurray1818.github.io/Poly_Scrape/dashboard.html)
 [![Paper P&L](https://img.shields.io/endpoint?url=https://smurray1818.github.io/Poly_Scrape/badge_pnl.json&cacheSeconds=900)](https://smurray1818.github.io/Poly_Scrape/dashboard.html)
 [![Trades](https://img.shields.io/endpoint?url=https://smurray1818.github.io/Poly_Scrape/badge_trades.json&cacheSeconds=900)](https://smurray1818.github.io/Poly_Scrape/dashboard.html)
-[![Auto-Update Dashboard](https://github.com/smurray1818/Poly_Scrape/actions/workflows/auto-update.yml/badge.svg)](https://github.com/smurray1818/Poly_Scrape/actions/workflows/auto-update.yml)
+[![Auto-Update Dashboard](https://github.com/seanmurray/Poly_Up_Down/actions/workflows/auto-update.yml/badge.svg)](https://github.com/seanmurray/Poly_Up_Down/actions/workflows/auto-update.yml)
 
 Trades the spread between a Binance spot price and its Polymarket binary-outcome
 probability, using momentum signals, fractional Kelly sizing, and hard risk limits.

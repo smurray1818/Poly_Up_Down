@@ -497,7 +497,7 @@ def generate_badges(trades: list[dict], out_dir: Path) -> None:
     ever modifying README.md.
 
     Served from GitHub Pages; referenced in README as:
-      https://img.shields.io/endpoint?url=https://smurray1818.github.io/Poly_Scrape/badge_winrate.json
+      https://img.shields.io/endpoint?url=https://seanmurray.github.io/Poly_Up_Down/badge_winrate.json
     """
     # Win-rate badge
     if trades:
