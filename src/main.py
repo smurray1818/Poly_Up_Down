@@ -236,7 +236,7 @@ class ContractBot:
                 poly_ask=book.best_ask,
             )
             if not ok:
-                logger.debug("%s risk rejected: %s — %s", self.contract.name, reason.code, reason.detail)
+                logger.info("%s risk rejected: %s — %s", self.contract.name, reason.code, reason.detail)
                 return
 
             price = book.best_ask if sig.side == Side.BUY else book.best_bid
@@ -274,6 +274,7 @@ class Bot:
                 max_drawdown_pct=float(os.getenv("MAX_DRAWDOWN_PCT", "0.10")),
                 max_daily_loss_pct=float(os.getenv("MAX_DAILY_LOSS_PCT", "0.05")),
                 max_notional_per_trade=float(os.getenv("MAX_NOTIONAL", "500")),
+                max_spread_pct=float(os.getenv("MAX_SPREAD_PCT", "0.30")),
             ),
         )
         self.sizer = KellySizer(
