@@ -1,0 +1,12 @@
+[Unit]
+Description=Polymarket CSV sync to GitHub (single run)
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=ubuntu
+WorkingDirectory=/home/ubuntu/Poly_Up_Down
+ExecStart=/bin/bash /home/ubuntu/Poly_Up_Down/scripts/sync_trades.sh
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=polymarket-sync

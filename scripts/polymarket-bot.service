@@ -1,0 +1,23 @@
+[Unit]
+Description=Polymarket Paper Trading Bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/Poly_Up_Down
+ExecStart=/home/ubuntu/Poly_Up_Down/.venv/bin/python -m src.main
+Restart=always
+RestartSec=10
+
+# Load .env variables
+EnvironmentFile=/home/ubuntu/Poly_Up_Down/.env
+
+# Logs go to journald — view with: journalctl -u polymarket-bot -f
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=polymarket-bot
+
+[Install]
+WantedBy=multi-user.target
