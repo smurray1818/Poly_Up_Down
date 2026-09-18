@@ -1,248 +1,185 @@
 [
   {
-    "address": "0x9c02fb0be74593049cf07a744f4dc8cf8b74285c",
-    "pnl_per_trade": 4606.944,
-    "trades_per_day": 1.71,
-    "profit": 147422.21,
-    "polymarket_url": "https://polymarket.com/profile/0x9c02fb0be74593049cf07a744f4dc8cf8b74285c"
-  },
-  {
-    "address": "0xa2b71f4b699d25e896da814684c74ddb332b4256",
-    "pnl_per_trade": 3190.0416,
-    "trades_per_day": 1.14,
-    "profit": 25520.33,
-    "polymarket_url": "https://polymarket.com/profile/0xa2b71f4b699d25e896da814684c74ddb332b4256"
-  },
-  {
-    "address": "0xdade0c83c7820af23889146b468915ae39cb3639",
-    "pnl_per_trade": 516.3594,
-    "trades_per_day": 8.14,
-    "profit": 41825.11,
-    "polymarket_url": "https://polymarket.com/profile/0xdade0c83c7820af23889146b468915ae39cb3639"
+    "address": "0x8b4bca1d794779e66e023d44391b2a86c5ab541b",
+    "pnl_per_trade": 331.7627,
+    "trades_per_day": 1.57,
+    "profit": 165881.34,
+    "polymarket_url": "https://polymarket.com/profile/0x8b4bca1d794779e66e023d44391b2a86c5ab541b"
   },
   {
     "address": "0xed107a85a4585a381e48c7f7ca4144909e7dd2e5",
-    "pnl_per_trade": 144.5789,
+    "pnl_per_trade": 147.7616,
     "trades_per_day": 6.0,
-    "profit": 72289.43,
+    "profit": 73880.82,
     "polymarket_url": "https://polymarket.com/profile/0xed107a85a4585a381e48c7f7ca4144909e7dd2e5"
   },
   {
-    "address": "0xe033e9d4a0e8b30c417f3f7abcb029bc695940a5",
-    "pnl_per_trade": 131.1499,
-    "trades_per_day": 10.57,
-    "profit": 65574.96,
-    "polymarket_url": "https://polymarket.com/profile/0xe033e9d4a0e8b30c417f3f7abcb029bc695940a5"
-  },
-  {
-    "address": "0x4bff30af91642dc7d2b19a8664378fe55c45fc26",
-    "pnl_per_trade": 110.3213,
-    "trades_per_day": 8.86,
-    "profit": 55160.64,
-    "polymarket_url": "https://polymarket.com/profile/0x4bff30af91642dc7d2b19a8664378fe55c45fc26"
-  },
-  {
-    "address": "0x614dc8d3542c12103d2c6a3553fd761e391d1546",
-    "pnl_per_trade": 98.388,
-    "trades_per_day": 6.57,
-    "profit": 49194.02,
-    "polymarket_url": "https://polymarket.com/profile/0x614dc8d3542c12103d2c6a3553fd761e391d1546"
-  },
-  {
-    "address": "0x8a4c788f043023b8b28a762216d037e9f148532b",
-    "pnl_per_trade": 70.9596,
-    "trades_per_day": 1.14,
-    "profit": 35479.79,
-    "polymarket_url": "https://polymarket.com/profile/0x8a4c788f043023b8b28a762216d037e9f148532b"
-  },
-  {
     "address": "0x361b16e3ddfe1d415d41008daac2631d94ab74fe",
-    "pnl_per_trade": 66.3782,
-    "trades_per_day": 8.43,
-    "profit": 33189.09,
+    "pnl_per_trade": 142.8575,
+    "trades_per_day": 14.86,
+    "profit": 71428.75,
     "polymarket_url": "https://polymarket.com/profile/0x361b16e3ddfe1d415d41008daac2631d94ab74fe"
   },
   {
-    "address": "0xf705fa045201391d9632b7f3cde06a5e24453ca7",
-    "pnl_per_trade": 62.6162,
-    "trades_per_day": 71.43,
-    "profit": 31308.11,
-    "polymarket_url": "https://polymarket.com/profile/0xf705fa045201391d9632b7f3cde06a5e24453ca7"
+    "address": "0x614dc8d3542c12103d2c6a3553fd761e391d1546",
+    "pnl_per_trade": 111.0303,
+    "trades_per_day": 5.86,
+    "profit": 55515.14,
+    "polymarket_url": "https://polymarket.com/profile/0x614dc8d3542c12103d2c6a3553fd761e391d1546"
+  },
+  {
+    "address": "0xb1ca909e848cc24ec4e220ce1c453bc290c51705",
+    "pnl_per_trade": 93.5621,
+    "trades_per_day": 30.43,
+    "profit": 46781.04,
+    "polymarket_url": "https://polymarket.com/profile/0xb1ca909e848cc24ec4e220ce1c453bc290c51705"
   },
   {
     "address": "0x1f9e15f39bbd5d163b0eacf0fbef647ced9e4f1a",
-    "pnl_per_trade": 58.7051,
-    "trades_per_day": 24.29,
-    "profit": 29352.54,
+    "pnl_per_trade": 65.3266,
+    "trades_per_day": 36.71,
+    "profit": 32663.31,
     "polymarket_url": "https://polymarket.com/profile/0x1f9e15f39bbd5d163b0eacf0fbef647ced9e4f1a"
   },
   {
+    "address": "0x8a4c788f043023b8b28a762216d037e9f148532b",
+    "pnl_per_trade": 57.0668,
+    "trades_per_day": 1.29,
+    "profit": 28533.39,
+    "polymarket_url": "https://polymarket.com/profile/0x8a4c788f043023b8b28a762216d037e9f148532b"
+  },
+  {
     "address": "0x69d1983b8a327b2eb2897c7fc85ac6f637047c8b",
-    "pnl_per_trade": 56.1297,
-    "trades_per_day": 67.71,
-    "profit": 28064.85,
+    "pnl_per_trade": 51.7677,
+    "trades_per_day": 59.86,
+    "profit": 25883.86,
     "polymarket_url": "https://polymarket.com/profile/0x69d1983b8a327b2eb2897c7fc85ac6f637047c8b"
-  },
-  {
-    "address": "0xbacd00c9080a82ded56f504ee8810af732b0ab35",
-    "pnl_per_trade": 45.4757,
-    "trades_per_day": 13.57,
-    "profit": 22737.83,
-    "polymarket_url": "https://polymarket.com/profile/0xbacd00c9080a82ded56f504ee8810af732b0ab35"
-  },
-  {
-    "address": "0x56ad6bd05999e0f33ea9c05a48ccb1364a46f13e",
-    "pnl_per_trade": 42.9028,
-    "trades_per_day": 5.0,
-    "profit": 21451.38,
-    "polymarket_url": "https://polymarket.com/profile/0x56ad6bd05999e0f33ea9c05a48ccb1364a46f13e"
   },
   {
     "address": "0xb66582886125a2a2ea966f1ea60ea60b6ecabf8f",
     "pnl_per_trade": 42.7962,
-    "trades_per_day": 4.86,
+    "trades_per_day": 5.0,
     "profit": 21398.1,
     "polymarket_url": "https://polymarket.com/profile/0xb66582886125a2a2ea966f1ea60ea60b6ecabf8f"
   },
   {
-    "address": "0xb1ca909e848cc24ec4e220ce1c453bc290c51705",
-    "pnl_per_trade": 38.8623,
-    "trades_per_day": 40.14,
-    "profit": 19431.13,
-    "polymarket_url": "https://polymarket.com/profile/0xb1ca909e848cc24ec4e220ce1c453bc290c51705"
+    "address": "0xf705fa045201391d9632b7f3cde06a5e24453ca7",
+    "pnl_per_trade": 42.1942,
+    "trades_per_day": 71.43,
+    "profit": 21097.09,
+    "polymarket_url": "https://polymarket.com/profile/0xf705fa045201391d9632b7f3cde06a5e24453ca7"
+  },
+  {
+    "address": "0xbacd00c9080a82ded56f504ee8810af732b0ab35",
+    "pnl_per_trade": 41.654,
+    "trades_per_day": 13.57,
+    "profit": 20827.0,
+    "polymarket_url": "https://polymarket.com/profile/0xbacd00c9080a82ded56f504ee8810af732b0ab35"
   },
   {
     "address": "0xc97b0b2a2547bb3ed57167092ef8a6e816c347e5",
-    "pnl_per_trade": 35.5981,
-    "trades_per_day": 1.14,
-    "profit": 17799.03,
+    "pnl_per_trade": 34.7313,
+    "trades_per_day": 3.43,
+    "profit": 17365.65,
     "polymarket_url": "https://polymarket.com/profile/0xc97b0b2a2547bb3ed57167092ef8a6e816c347e5"
   },
   {
-    "address": "0x9f2fe025f84839ca81dd8e0338892605702d2ca8",
-    "pnl_per_trade": 34.7247,
-    "trades_per_day": 3.71,
-    "profit": 17362.36,
-    "polymarket_url": "https://polymarket.com/profile/0x9f2fe025f84839ca81dd8e0338892605702d2ca8"
+    "address": "0x9e88f359b9803e41420fbb13385c5ae1765c301c",
+    "pnl_per_trade": 32.4406,
+    "trades_per_day": 5.57,
+    "profit": 16220.3,
+    "polymarket_url": "https://polymarket.com/profile/0x9e88f359b9803e41420fbb13385c5ae1765c301c"
   },
   {
-    "address": "0xe74995389bfc1c24ca656e6c2502c1fca757f771",
-    "pnl_per_trade": 23.1458,
-    "trades_per_day": 2.29,
-    "profit": 11572.92,
-    "polymarket_url": "https://polymarket.com/profile/0xe74995389bfc1c24ca656e6c2502c1fca757f771"
+    "address": "0xc3daa1bb9ce85866fb1a7c3a5d02816798e641fe",
+    "pnl_per_trade": 29.1013,
+    "trades_per_day": 2.0,
+    "profit": 4598.01,
+    "polymarket_url": "https://polymarket.com/profile/0xc3daa1bb9ce85866fb1a7c3a5d02816798e641fe"
   },
   {
     "address": "0xfaf680c17a9cca24ff0773ae2d9f7db49c02cc47",
-    "pnl_per_trade": 19.9056,
-    "trades_per_day": 4.0,
-    "profit": 9952.81,
+    "pnl_per_trade": 19.7805,
+    "trades_per_day": 3.43,
+    "profit": 9890.23,
     "polymarket_url": "https://polymarket.com/profile/0xfaf680c17a9cca24ff0773ae2d9f7db49c02cc47"
   },
   {
-    "address": "0x970998da056e60c707d9b1fc55cfdf3d68c252ab",
-    "pnl_per_trade": 13.4761,
-    "trades_per_day": 42.14,
-    "profit": 6738.03,
-    "polymarket_url": "https://polymarket.com/profile/0x970998da056e60c707d9b1fc55cfdf3d68c252ab"
-  },
-  {
-    "address": "0xecb14ac6e9ca447ce2f2912e6217b43d7b655da3",
-    "pnl_per_trade": 12.3333,
-    "trades_per_day": 1.86,
-    "profit": 6166.65,
-    "polymarket_url": "https://polymarket.com/profile/0xecb14ac6e9ca447ce2f2912e6217b43d7b655da3"
+    "address": "0x9efdf8932077f748fa000ec4e74996829e21b227",
+    "pnl_per_trade": 18.6528,
+    "trades_per_day": 4.14,
+    "profit": 1604.14,
+    "polymarket_url": "https://polymarket.com/profile/0x9efdf8932077f748fa000ec4e74996829e21b227"
   },
   {
     "address": "0xff1e352d5310eab17d1e9fd7e00ec33f16c05e2d",
-    "pnl_per_trade": 10.9074,
-    "trades_per_day": 26.43,
-    "profit": 5453.69,
+    "pnl_per_trade": 13.099,
+    "trades_per_day": 23.0,
+    "profit": 6549.51,
     "polymarket_url": "https://polymarket.com/profile/0xff1e352d5310eab17d1e9fd7e00ec33f16c05e2d"
   },
   {
+    "address": "0x6db568e61e5e3de7d87f831431b673f38ce2e279",
+    "pnl_per_trade": 12.7537,
+    "trades_per_day": 9.14,
+    "profit": 6376.86,
+    "polymarket_url": "https://polymarket.com/profile/0x6db568e61e5e3de7d87f831431b673f38ce2e279"
+  },
+  {
     "address": "0x24ded84d901a743cfee095f8082b0f9f647183cb",
-    "pnl_per_trade": 10.7473,
-    "trades_per_day": 1.43,
-    "profit": 5373.65,
+    "pnl_per_trade": 11.9033,
+    "trades_per_day": 1.71,
+    "profit": 5951.63,
     "polymarket_url": "https://polymarket.com/profile/0x24ded84d901a743cfee095f8082b0f9f647183cb"
   },
   {
-    "address": "0x1610db79f753a80207e1d66716be9e91e627ae49",
-    "pnl_per_trade": 9.569,
-    "trades_per_day": 71.43,
-    "profit": 4784.48,
-    "polymarket_url": "https://polymarket.com/profile/0x1610db79f753a80207e1d66716be9e91e627ae49"
-  },
-  {
     "address": "0xded8a46ee5fa25b550689176ab7c58c2d44eca0f",
-    "pnl_per_trade": 7.2802,
-    "trades_per_day": 4.0,
-    "profit": 1157.56,
+    "pnl_per_trade": 9.4836,
+    "trades_per_day": 4.29,
+    "profit": 1526.85,
     "polymarket_url": "https://polymarket.com/profile/0xded8a46ee5fa25b550689176ab7c58c2d44eca0f"
   },
   {
-    "address": "0xadfb6cba33cebca02eab6111ace1e3924b9cc2ef",
-    "pnl_per_trade": 5.8525,
-    "trades_per_day": 3.14,
-    "profit": 2926.24,
-    "polymarket_url": "https://polymarket.com/profile/0xadfb6cba33cebca02eab6111ace1e3924b9cc2ef"
+    "address": "0x821dab0565ebf5b327f51db06223fdcfe01acf16",
+    "pnl_per_trade": 8.4617,
+    "trades_per_day": 71.43,
+    "profit": 4230.83,
+    "polymarket_url": "https://polymarket.com/profile/0x821dab0565ebf5b327f51db06223fdcfe01acf16"
+  },
+  {
+    "address": "0x970998da056e60c707d9b1fc55cfdf3d68c252ab",
+    "pnl_per_trade": 6.5515,
+    "trades_per_day": 32.29,
+    "profit": 3275.74,
+    "polymarket_url": "https://polymarket.com/profile/0x970998da056e60c707d9b1fc55cfdf3d68c252ab"
   },
   {
     "address": "0x751a2b86cab503496efd325c8344e10159349ea1",
-    "pnl_per_trade": 5.6657,
-    "trades_per_day": 15.0,
-    "profit": 2832.85,
+    "pnl_per_trade": 6.4842,
+    "trades_per_day": 13.86,
+    "profit": 3242.1,
     "polymarket_url": "https://polymarket.com/profile/0x751a2b86cab503496efd325c8344e10159349ea1"
   },
   {
-    "address": "0x29b52d98ac9ef9414b04164246c95bc63d74cc6c",
-    "pnl_per_trade": 5.4882,
-    "trades_per_day": 71.43,
-    "profit": 2744.1,
-    "polymarket_url": "https://polymarket.com/profile/0x29b52d98ac9ef9414b04164246c95bc63d74cc6c"
-  },
-  {
-    "address": "0x212f7fc77c18c6ce34bb1dae43e9198ab19b7fd2",
-    "pnl_per_trade": 4.5698,
-    "trades_per_day": 3.71,
-    "profit": 754.02,
-    "polymarket_url": "https://polymarket.com/profile/0x212f7fc77c18c6ce34bb1dae43e9198ab19b7fd2"
+    "address": "0x56ad6bd05999e0f33ea9c05a48ccb1364a46f13e",
+    "pnl_per_trade": 5.3726,
+    "trades_per_day": 6.14,
+    "profit": 2686.32,
+    "polymarket_url": "https://polymarket.com/profile/0x56ad6bd05999e0f33ea9c05a48ccb1364a46f13e"
   },
   {
     "address": "0x58f8f1138be2192696378629fc9aa23c7910dc70",
-    "pnl_per_trade": 3.7558,
-    "trades_per_day": 21.57,
-    "profit": 1877.89,
+    "pnl_per_trade": 3.9925,
+    "trades_per_day": 20.71,
+    "profit": 1996.27,
     "polymarket_url": "https://polymarket.com/profile/0x58f8f1138be2192696378629fc9aa23c7910dc70"
   },
   {
-    "address": "0x67ac9e1ad7d7e74ef0215d14fc8edb538e4fedf1",
-    "pnl_per_trade": 3.5904,
-    "trades_per_day": 45.71,
-    "profit": 1795.19,
-    "polymarket_url": "https://polymarket.com/profile/0x67ac9e1ad7d7e74ef0215d14fc8edb538e4fedf1"
-  },
-  {
-    "address": "0x448861155279dbf833d041b963e3ac854599e319",
-    "pnl_per_trade": 3.1635,
-    "trades_per_day": 34.29,
-    "profit": 1581.73,
-    "polymarket_url": "https://polymarket.com/profile/0x448861155279dbf833d041b963e3ac854599e319"
-  },
-  {
-    "address": "0x97276d1b22bcc0690b83de2840e871cebaba9157",
-    "pnl_per_trade": 1.4983,
-    "trades_per_day": 4.43,
-    "profit": 206.76,
-    "polymarket_url": "https://polymarket.com/profile/0x97276d1b22bcc0690b83de2840e871cebaba9157"
-  },
-  {
-    "address": "0xf68a281980f8c13828e84e147e3822381d6e5b1b",
-    "pnl_per_trade": 0.9783,
-    "trades_per_day": 9.43,
-    "profit": 489.13,
-    "polymarket_url": "https://polymarket.com/profile/0xf68a281980f8c13828e84e147e3822381d6e5b1b"
+    "address": "0xb619ed5b378053f8309c307d2f7adf9c13665068",
+    "pnl_per_trade": 2.9172,
+    "trades_per_day": 6.86,
+    "profit": 1458.59,
+    "polymarket_url": "https://polymarket.com/profile/0xb619ed5b378053f8309c307d2f7adf9c13665068"
   },
   {
     "address": "0x9b11866433281ade9f2811dbde8acdefc45f5375",
@@ -253,94 +190,129 @@
   },
   {
     "address": "0xccd81fbd3395dc43a0531f8484b21c2462daf4de",
-    "pnl_per_trade": 0.1135,
+    "pnl_per_trade": 0.664,
     "trades_per_day": 71.43,
-    "profit": 56.75,
+    "profit": 331.99,
     "polymarket_url": "https://polymarket.com/profile/0xccd81fbd3395dc43a0531f8484b21c2462daf4de"
   },
   {
-    "address": "0x0cb038487586d1119b165466072e9baf666f3a90",
-    "pnl_per_trade": 0.1045,
+    "address": "0x9cb990f1862568a63d8601efeebe0304225c32f2",
+    "pnl_per_trade": 0.3298,
+    "trades_per_day": 10.43,
+    "profit": 164.9,
+    "polymarket_url": "https://polymarket.com/profile/0x9cb990f1862568a63d8601efeebe0304225c32f2"
+  },
+  {
+    "address": "0xde9f7f4e77a1595623ceb58e469f776257ccd43c",
+    "pnl_per_trade": 0.3072,
     "trades_per_day": 71.43,
-    "profit": 52.27,
-    "polymarket_url": "https://polymarket.com/profile/0x0cb038487586d1119b165466072e9baf666f3a90"
+    "profit": 153.62,
+    "polymarket_url": "https://polymarket.com/profile/0xde9f7f4e77a1595623ceb58e469f776257ccd43c"
   },
   {
-    "address": "0x6db568e61e5e3de7d87f831431b673f38ce2e279",
-    "pnl_per_trade": 0.0,
-    "trades_per_day": 7.14,
-    "profit": 1827027.33,
-    "polymarket_url": "https://polymarket.com/profile/0x6db568e61e5e3de7d87f831431b673f38ce2e279"
+    "address": "0x2cc8cc54f50dbb45fe346612821ca93b6e93262b",
+    "pnl_per_trade": 0.2907,
+    "trades_per_day": 5.29,
+    "profit": 145.33,
+    "polymarket_url": "https://polymarket.com/profile/0x2cc8cc54f50dbb45fe346612821ca93b6e93262b"
   },
   {
-    "address": "0x73c5701afdefba2814193168448b2992306b2f80",
+    "address": "0x97276d1b22bcc0690b83de2840e871cebaba9157",
+    "pnl_per_trade": 0.1887,
+    "trades_per_day": 3.29,
+    "profit": 26.42,
+    "polymarket_url": "https://polymarket.com/profile/0x97276d1b22bcc0690b83de2840e871cebaba9157"
+  },
+  {
+    "address": "0xc2ad03f79ca3f3c17d8c7de2612ce0c89b7d40ed",
+    "pnl_per_trade": 0.1492,
+    "trades_per_day": 71.43,
+    "profit": 74.61,
+    "polymarket_url": "https://polymarket.com/profile/0xc2ad03f79ca3f3c17d8c7de2612ce0c89b7d40ed"
+  },
+  {
+    "address": "0x67542c3219b37fd1610aad290676ff91cdbfe3bc",
+    "pnl_per_trade": 0.0972,
+    "trades_per_day": 7.0,
+    "profit": 38.6,
+    "polymarket_url": "https://polymarket.com/profile/0x67542c3219b37fd1610aad290676ff91cdbfe3bc"
+  },
+  {
+    "address": "0x3725d52f3c252e8374999cc8617292ea2608ad88",
+    "pnl_per_trade": 0.0795,
+    "trades_per_day": 71.43,
+    "profit": 39.76,
+    "polymarket_url": "https://polymarket.com/profile/0x3725d52f3c252e8374999cc8617292ea2608ad88"
+  },
+  {
+    "address": "0x63cf8544631c31e9fcea0b02141dd24d01d6e4d0",
     "pnl_per_trade": 0.0,
-    "trades_per_day": 1.86,
-    "profit": 880269.77,
-    "polymarket_url": "https://polymarket.com/profile/0x73c5701afdefba2814193168448b2992306b2f80"
+    "trades_per_day": 4.14,
+    "profit": 636309.75,
+    "polymarket_url": "https://polymarket.com/profile/0x63cf8544631c31e9fcea0b02141dd24d01d6e4d0"
   },
   {
     "address": "0xe9b710551dd82a44e79203c2394a2b10163ace7b",
     "pnl_per_trade": 0.0,
-    "trades_per_day": 2.29,
-    "profit": 361635.87,
+    "trades_per_day": 3.71,
+    "profit": 408608.67,
     "polymarket_url": "https://polymarket.com/profile/0xe9b710551dd82a44e79203c2394a2b10163ace7b"
   },
   {
     "address": "0x5e9458202b5817a72cf81105ec8a30e6f3705ba1",
     "pnl_per_trade": 0.0,
-    "trades_per_day": 9.57,
-    "profit": 345624.2,
+    "trades_per_day": 9.86,
+    "profit": 407360.46,
     "polymarket_url": "https://polymarket.com/profile/0x5e9458202b5817a72cf81105ec8a30e6f3705ba1"
-  },
-  {
-    "address": "0xd3b034d7bfb2473fb252d0414646d9786bac329e",
-    "pnl_per_trade": 0.0,
-    "trades_per_day": 29.57,
-    "profit": 169469.61,
-    "polymarket_url": "https://polymarket.com/profile/0xd3b034d7bfb2473fb252d0414646d9786bac329e"
   },
   {
     "address": "0xf1528f12e645462c344799b62b1b421a6a4c64aa",
     "pnl_per_trade": 0.0,
-    "trades_per_day": 2.86,
-    "profit": 147893.28,
+    "trades_per_day": 2.71,
+    "profit": 176058.17,
     "polymarket_url": "https://polymarket.com/profile/0xf1528f12e645462c344799b62b1b421a6a4c64aa"
-  },
-  {
-    "address": "0x7a75a4183e577123db9ff0adff520561ef95d288",
-    "pnl_per_trade": 0.0,
-    "trades_per_day": 7.86,
-    "profit": 108230.97,
-    "polymarket_url": "https://polymarket.com/profile/0x7a75a4183e577123db9ff0adff520561ef95d288"
   },
   {
     "address": "0xda856317923415a534d8952e6f8abde17c2e1ca7",
     "pnl_per_trade": 0.0,
     "trades_per_day": 3.0,
-    "profit": 105944.71,
+    "profit": 117637.41,
     "polymarket_url": "https://polymarket.com/profile/0xda856317923415a534d8952e6f8abde17c2e1ca7"
   },
   {
-    "address": "0xc32359bbc920b365a05cd310b9a998508c980077",
-    "pnl_per_trade": 0.0,
-    "trades_per_day": 40.71,
-    "profit": 99502.34,
-    "polymarket_url": "https://polymarket.com/profile/0xc32359bbc920b365a05cd310b9a998508c980077"
+    "address": "0x004c832cb3af8ee0771fdf5fc3d494fe8ca2bb89",
+    "pnl_per_trade": -0.0,
+    "trades_per_day": 1.71,
+    "profit": 114509.18,
+    "polymarket_url": "https://polymarket.com/profile/0x004c832cb3af8ee0771fdf5fc3d494fe8ca2bb89"
   },
   {
-    "address": "0xc74e958f3bd160cb0c6a782d664ad8440e27e725",
+    "address": "0x7a75a4183e577123db9ff0adff520561ef95d288",
     "pnl_per_trade": 0.0,
-    "trades_per_day": 9.0,
-    "profit": 93156.41,
-    "polymarket_url": "https://polymarket.com/profile/0xc74e958f3bd160cb0c6a782d664ad8440e27e725"
+    "trades_per_day": 7.71,
+    "profit": 110586.07,
+    "polymarket_url": "https://polymarket.com/profile/0x7a75a4183e577123db9ff0adff520561ef95d288"
   },
   {
     "address": "0xa797d6bd8fe6e404bb4d8e4ab3d97c38336fdede",
     "pnl_per_trade": 0.0,
     "trades_per_day": 71.43,
-    "profit": 92175.46,
+    "profit": 93684.98,
     "polymarket_url": "https://polymarket.com/profile/0xa797d6bd8fe6e404bb4d8e4ab3d97c38336fdede"
+  },
+  {
+    "address": "0xc74e958f3bd160cb0c6a782d664ad8440e27e725",
+    "pnl_per_trade": 0.0,
+    "trades_per_day": 5.0,
+    "profit": 93156.41,
+    "polymarket_url": "https://polymarket.com/profile/0xc74e958f3bd160cb0c6a782d664ad8440e27e725"
+  },
+  {
+    "address": "0x090af6fd2aeb04202abc97370aa86c1b81d90fa6",
+    "pnl_per_trade": 0.0,
+    "trades_per_day": 71.43,
+    "profit": 72495.62,
+    "polymarket_url": "https://polymarket.com/profile/0x090af6fd2aeb04202abc97370aa86c1b81d90fa6"
   },
   {
     "address": "0x96c2e57df188b3593ea675ebaf31d29d46ed5741",
@@ -352,9 +324,16 @@
   {
     "address": "0x0b0e1eb890038cc0f98d26d34842bbe4d1434826",
     "pnl_per_trade": 0.0,
-    "trades_per_day": 4.0,
-    "profit": 49701.74,
+    "trades_per_day": 3.57,
+    "profit": 53061.51,
     "polymarket_url": "https://polymarket.com/profile/0x0b0e1eb890038cc0f98d26d34842bbe4d1434826"
+  },
+  {
+    "address": "0x9db82de5a71ae539bc82f4d9ac3a007c7d742eff",
+    "pnl_per_trade": 0.0,
+    "trades_per_day": 2.0,
+    "profit": 49926.07,
+    "polymarket_url": "https://polymarket.com/profile/0x9db82de5a71ae539bc82f4d9ac3a007c7d742eff"
   },
   {
     "address": "0x505392819f96f3ab8de6f57da887b21724fc19de",
@@ -366,22 +345,29 @@
   {
     "address": "0xbbf0cf01fa08b9d09a7fb540840b1752ea0fb554",
     "pnl_per_trade": 0.0,
-    "trades_per_day": 20.29,
+    "trades_per_day": 18.0,
     "profit": 25067.61,
     "polymarket_url": "https://polymarket.com/profile/0xbbf0cf01fa08b9d09a7fb540840b1752ea0fb554"
   },
   {
+    "address": "0x15096a93fb86ea8a782574536ce3bab88e6cca95",
+    "pnl_per_trade": 0.0,
+    "trades_per_day": 1.57,
+    "profit": 21235.54,
+    "polymarket_url": "https://polymarket.com/profile/0x15096a93fb86ea8a782574536ce3bab88e6cca95"
+  },
+  {
     "address": "0xd8b4d1e58dc7d60ddc886bcb9d456eb5da887773",
     "pnl_per_trade": 0.0,
-    "trades_per_day": 7.86,
+    "trades_per_day": 6.71,
     "profit": 21195.93,
     "polymarket_url": "https://polymarket.com/profile/0xd8b4d1e58dc7d60ddc886bcb9d456eb5da887773"
   },
   {
     "address": "0xcc32068e0d0b19790e3376bc1751552adcca92d2",
     "pnl_per_trade": 0.0,
-    "trades_per_day": 9.57,
-    "profit": 16692.12,
+    "trades_per_day": 9.14,
+    "profit": 18517.78,
     "polymarket_url": "https://polymarket.com/profile/0xcc32068e0d0b19790e3376bc1751552adcca92d2"
   }
 ]
